@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Test/ConsoleMineSweeper.Test.csproj": {}
+  },
+  "projects": {
+    "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/ConsoleMineSweeper.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/ConsoleMineSweeper.Core.csproj",
+        "projectName": "ConsoleMineSweeper.Core",
+        "projectPath": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/ConsoleMineSweeper.Core.csproj",
+        "packagesPath": "/Users/erindykerboundary/.nuget/packages/",
+        "outputPath": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/erindykerboundary/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Test/ConsoleMineSweeper.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Test/ConsoleMineSweeper.Test.csproj",
+        "projectName": "ConsoleMineSweeper.Test",
+        "projectPath": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Test/ConsoleMineSweeper.Test.csproj",
+        "packagesPath": "/Users/erindykerboundary/.nuget/packages/",
+        "outputPath": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Test/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/erindykerboundary/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/ConsoleMineSweeper.Core.csproj": {
+                "projectPath": "/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/ConsoleMineSweeper.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
