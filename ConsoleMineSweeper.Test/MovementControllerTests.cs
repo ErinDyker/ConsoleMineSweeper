@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleMineSweeper.Core.Models;
 using ConsoleMineSweeper.Core.Services;
 using NUnit.Framework;
 
@@ -14,11 +15,11 @@ namespace ConsoleMineSweeper.Test
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("A", 3);
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 3 };
 
             var  newlocation = movementController.Move(Core.Enum.MovementDirection.Up, location);
 
-            Assert.IsTrue(newlocation.Value == 2); 
+            Assert.IsTrue(newlocation.YPosition == 2); 
         }
 
         [Test]
@@ -26,7 +27,7 @@ namespace ConsoleMineSweeper.Test
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("A", 1);
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 1 };
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Up, location);
 
@@ -39,11 +40,11 @@ namespace ConsoleMineSweeper.Test
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("A", 3);
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 3 };
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Down, location);
 
-            Assert.IsTrue(newlocation.Value == 4);
+            Assert.IsTrue(newlocation.YPosition == 4);
         }
 
         [Test]
@@ -51,7 +52,7 @@ namespace ConsoleMineSweeper.Test
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("A", 8);
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 8};
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Down, location);
 
@@ -64,46 +65,46 @@ namespace ConsoleMineSweeper.Test
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("A", 3);
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 3 };
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Right , location);
 
-            Assert.IsTrue(newlocation.Key.Equals("B"));
+            Assert.IsTrue(newlocation.XPosition.Equals("B"));
         }
 
-        //ToDo fix movement right
+      
         [Test]
         public void Move_Right_AlreadyAtEnd()
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("H", 1);
+            Coordinate location = new Coordinate() { XPosition = "H", YPosition = 1 };
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Right, location);
 
             Assert.IsTrue(newlocation.Equals(location));
         }
 
-        //ToDo fix movement left
+      
         [Test]
         public void Move_Left_Successful()
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("B", 3);
+            Coordinate location = new Coordinate() { XPosition = "B", YPosition = 3 };
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Left, location);
 
-            Assert.IsTrue(newlocation.Key.Equals("C"));
+            Assert.IsTrue(newlocation.XPosition.Equals("A"));
         }
 
-        //ToDo fix movement left
+      
         [Test]
         public void Move_Left_AlreadyAtStart()
         {
             MovementController movementController = new MovementController();
 
-            KeyValuePair<string, int> location = new KeyValuePair<string, int>("A", 1);
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 1 };
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Left, location);
 

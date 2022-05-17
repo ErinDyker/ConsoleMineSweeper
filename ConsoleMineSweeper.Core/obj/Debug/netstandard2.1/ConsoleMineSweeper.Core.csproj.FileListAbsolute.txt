@@ -1,10 +1,10 @@
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/bin/Debug/netstandard2.1/ConsoleMineSweeper.Core.deps.json
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/bin/Debug/netstandard2.1/ConsoleMineSweeper.Core.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/bin/Debug/netstandard2.1/ConsoleMineSweeper.Core.pdb
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.csproj.AssemblyReference.cache
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.GeneratedMSBuildEditorConfig.editorconfig
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.AssemblyInfoInputs.cache
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.AssemblyInfo.cs
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.csproj.CoreCompileInputs.cache
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.pdb
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper.Core/obj/Debug/netstandard2.1/ConsoleMineSweeper.Core.csproj.AssemblyReference.cache

@@ -7,14 +7,6 @@ namespace ConsoleMineSweeper.Test
 {
     public class MineCreatorTests
     {
-        public MineCreatorTests()
-        {
-        }
-
-        [SetUp]
-        public void Setup()
-        {
-        }
 
         [Test]
         public void CreateMines_Easy()

@@ -35,9 +35,13 @@ namespace ConsoleMineSweeper.Core.Services
                     break;
             }
 
-            for (int i = 0; i < mineCount; i++)
-            {
-                mines.Add(new Mine() { Location = RandomisedLocation() });
+            while(mineCount != mines.Count)
+            { 
+                var mine = new Mine() { Location = RandomisedLocation() };
+
+                int duplicates = mines.FindAll(x => x.Location.LocationString == mine.Location.LocationString).Count;
+                //check its not already been added before
+                if(duplicates == 0) mines.Add(mine);
             }
 
             return mines;
@@ -47,15 +51,17 @@ namespace ConsoleMineSweeper.Core.Services
         /// Creates a randomly generated location
         /// </summary>
         /// <returns></returns>
-        KeyValuePair<string, int> RandomisedLocation()
+       Coordinate RandomisedLocation()
         {
             Random rnd = new Random();
-            char randomChar = (char)rnd.Next('a', 'h');
-            int randomInt = (int)rnd.Next(1, 8);
+
+            //creates 64 possible places
+            char randomChar = (char)rnd.Next('A', 'I');
+            int randomInt = (int)rnd.Next(1, 9);
 
             string key = randomChar.ToString();
 
-            return new KeyValuePair<string, int>(key, randomInt);
+            return new Coordinate(){ XPosition = key, YPosition = randomInt};
 
 
         }

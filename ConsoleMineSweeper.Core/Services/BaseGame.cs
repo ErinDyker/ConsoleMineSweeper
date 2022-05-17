@@ -18,6 +18,9 @@ namespace ConsoleMineSweeper.Core.Services
             _movementController = movementController;
         }
 
+        public Player Player { get; set; }
+
+
         /// <summary>
         /// Welcome Dialog and New Game Selector
         /// </summary>
@@ -36,7 +39,8 @@ namespace ConsoleMineSweeper.Core.Services
             }
             else
             {
-
+                //Close the game
+               Environment.Exit(0);
             }
         }
 
@@ -71,14 +75,14 @@ namespace ConsoleMineSweeper.Core.Services
         public void NewGame(GameDifficulty difficulty)
         {
 
-            var board = new Board();
+           
             var mines = _mineCreatorService.CreateMines(difficulty);
             int moveCount = 0;
+            Player = new Player();
+            Player.CurrentPosition = new Coordinate() { XPosition = "A", YPosition = 3 };
+            var lives = Player.Lives = 5;
 
-            bool isSafe = true;
-            KeyValuePair<string, int> playerLocation = new KeyValuePair<string, int>("A", 3);
-
-            while (isSafe)
+            while (lives > 0)
             {
                 bool parsedMovement = false;
                 MovementDirection movementDirection = MovementDirection.Up;
@@ -91,30 +95,44 @@ namespace ConsoleMineSweeper.Core.Services
 
                     parsedMovement = MovementDirection.TryParse(typeof(MovementDirection), move, true, out object movement);
 
-                    movementDirection = (MovementDirection)movement;
+                    if(movement !=null) movementDirection = (MovementDirection)movement;
                 }
 
-                playerLocation = _movementController.Move(movementDirection, playerLocation);
+                Player.CurrentPosition = _movementController.Move(movementDirection, Player.CurrentPosition);
 
-                Console.WriteLine("Moved to: " + playerLocation);
+                Console.WriteLine("Moved to: " + Player.CurrentPosition.LocationString);
                 moveCount++;
 
                 foreach (Mine mine in mines)
                 {
-                    if (playerLocation.Equals(mine.Location)) isSafe = false;
-                    break;
+                    if (Player.CurrentPosition.LocationString == mine.Location.LocationString)
+                    {
+                        lives--;
+                        ResetPosition(lives);
+                         break;
+                    }
+                   
                 }
 
-                if(playerLocation.Key.Equals("H"))
+                if(Player.CurrentPosition.XPosition.Equals("H"))
                 {
-                    WinScenario(moveCount, playerLocation);
+                    WinScenario(moveCount, Player.CurrentPosition);
                 }
-
-
             }
 
             GameOver();
 
+        }
+
+        public void ResetPosition(int lives)
+        {
+            Console.WriteLine("                                               ");
+            Console.WriteLine("BANG! YOU LANDED ON A MINE! ");
+            Console.WriteLine("YOU LOST A LIFE, RETURNING TO THE START ");
+            Console.WriteLine("LIVES LEFT: " + lives.ToString());
+            Console.WriteLine("                                               ");
+
+            Player.CurrentPosition = new Coordinate() { XPosition = "A", YPosition = 3 };
         }
 
         /// <summary>
@@ -129,7 +147,18 @@ namespace ConsoleMineSweeper.Core.Services
             Console.WriteLine("_______________________________________________");
             Console.WriteLine("                                               ");
             Console.WriteLine("PLAY AGAIN? Y/N ");
-            DifficultySelector();
+
+            string newGame = Console.ReadLine();
+
+            if (newGame.Equals("Y") || newGame.Equals("y"))
+            {
+                DifficultySelector();
+            }
+            else
+            {
+                //Close the game
+                Environment.Exit(0);
+            }
         }
 
         /// <summary>
@@ -137,30 +166,33 @@ namespace ConsoleMineSweeper.Core.Services
         /// </summary>
         /// <param name="moves"></param>
         /// <param name="location"></param>
-        public void WinScenario(int moves, KeyValuePair<string, int> location)
+        public void WinScenario(int moves, Coordinate location)
         {
             Console.WriteLine("                                               ");
             Console.WriteLine("WINNER! YOU MADE IT ACROSS! ");
             Console.WriteLine("SCORE: "+ moves + " MOVES");
-            Console.WriteLine("FINAL LOCATION: " + location.ToString());
+            Console.WriteLine("REMAINING LIVES: " + Player.Lives);
+            Console.WriteLine("FINAL LOCATION: " + location.LocationString);
             Console.WriteLine("                                               ");
             Console.WriteLine("_______________________________________________");
             Console.WriteLine("                                               ");
             Console.WriteLine("PLAY AGAIN? Y/N ");
-            DifficultySelector();
+
+            string newGame = Console.ReadLine();
+
+            if (newGame.Equals("Y") || newGame.Equals("y"))
+            {
+                DifficultySelector();
+
+            }
+            else
+            {
+                //Close the game
+                Environment.Exit(0);
+            }
         }
-
-
     }
 }
 
-// - - - - - - - -
-// - - - - - - - -
-// - - - - - - - -
-// - - - - - - - -
-// - - - - - - - -
-// - - - - - - - -
-// - - - - - - - -
-// - - - - - - - -
 
 

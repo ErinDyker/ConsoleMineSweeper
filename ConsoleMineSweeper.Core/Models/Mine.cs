@@ -5,6 +5,6 @@ namespace ConsoleMineSweeper.Core.Models
 {
     public class Mine
     {
-        public KeyValuePair<string, int> Location { get; set; }
+        public Coordinate Location { get; set; }
     }
 }

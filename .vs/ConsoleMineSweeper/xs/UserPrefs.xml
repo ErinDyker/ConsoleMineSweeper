@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{AC4AD4D3-93AE-489D-9EA1-6DED8E806FD5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleMineSweeper/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleMineSweeper.Core/Models/Player.cs">
     <Files>
-      <File FileName="ConsoleMineSweeper/Program.cs" Line="30" Column="12" />
+      <File FileName="ConsoleMineSweeper/Program.cs" Line="38" Column="30" />
       <File FileName="ConsoleMineSweeper.Core/Interfaces/IMineCreatorService.cs" />
       <File FileName="ConsoleMineSweeper.Core/Services/MineCreatorService.cs" />
       <File FileName="ConsoleMineSweeper.Core/Services/MovementController.cs" />
@@ -10,22 +10,23 @@
       <File FileName="ConsoleMineSweeper.Core/Services/BaseGame.cs" />
       <File FileName="ConsoleMineSweeper.Core/Enum/MovementDirection.cs" />
       <File FileName="ConsoleMineSweeper.Core/Enum/GameDifficulty.cs" />
-      <File FileName="ConsoleMineSweeper.Core/Models/Board.cs" />
       <File FileName="ConsoleMineSweeper.Core/Models/Mine.cs" />
       <File FileName="ConsoleMineSweeper.Test/MovementControllerTests.cs" />
       <File FileName="ConsoleMineSweeper.Test/MineCreatorTests.cs" />
+      <File FileName="ConsoleMineSweeper.Test/BaseGameTests.cs" />
+      <File FileName="ConsoleMineSweeper.Core/Models/Player.cs" Line="6" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleMineSweeper" expanded="True">
-            <Node name="ConsoleMineSweeper" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="ConsoleMineSweeper" expanded="True" />
             <Node name="ConsoleMineSweeper.Core" expanded="True">
               <Node name="Enum" expanded="True" />
               <Node name="Interfaces" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Player.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="ConsoleMineSweeper.Test" expanded="True">

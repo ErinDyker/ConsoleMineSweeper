@@ -3,14 +3,6 @@
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/ConsoleMineSweeper.runtimeconfig.dev.json
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/ConsoleMineSweeper.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/ConsoleMineSweeper.pdb
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.csproj.AssemblyReference.cache
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.GeneratedMSBuildEditorConfig.editorconfig
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.AssemblyInfoInputs.cache
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.AssemblyInfo.cs
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.csproj.CoreCompileInputs.cache
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.dll
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.pdb
-/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.genruntimeconfig.cache
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
@@ -52,4 +44,12 @@
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/ConsoleMineSweeper.Core.dll
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/bin/Debug/netcoreapp3.1/ConsoleMineSweeper.Core.pdb
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.csproj.AssemblyReference.cache
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.AssemblyInfoInputs.cache
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.AssemblyInfo.cs
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.csproj.CoreCompileInputs.cache
 /Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.csproj.CopyComplete
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.dll
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.pdb
+/Users/erindykerboundary/Code/PersonalProjects/ConsoleMineSweeper/ConsoleMineSweeper/obj/Debug/netcoreapp3.1/ConsoleMineSweeper.genruntimeconfig.cache
