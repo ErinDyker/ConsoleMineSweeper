@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using ConsoleMineSweeper.Core;
 using ConsoleMineSweeper.Core.Interfaces;
 using ConsoleMineSweeper.Core.Services;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +25,7 @@ namespace ConsoleMineSweeper
            {
                services.AddTransient<IMineCreatorService, MineCreatorService>()
                        .AddTransient<IMovementController, MovementController>()
+                       .AddTransient<IStringInputService, StringInputService>()
                        .AddTransient<BaseGame>();
            }).Build();
     }

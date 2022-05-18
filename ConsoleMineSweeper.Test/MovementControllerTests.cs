@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleMineSweeper.Core.Enum;
 using ConsoleMineSweeper.Core.Models;
 using ConsoleMineSweeper.Core.Services;
 using NUnit.Framework;
@@ -48,11 +49,11 @@ namespace ConsoleMineSweeper.Test
         }
 
         [Test]
-        public void Move_Down_AlreadyAtTop()
+        public void Move_Down_AlreadyAtBottom()
         {
             MovementController movementController = new MovementController();
 
-            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 8};
+            Coordinate location = new Coordinate() { XPosition = "A", YPosition = 9};
 
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Down, location);
 
@@ -109,6 +110,38 @@ namespace ConsoleMineSweeper.Test
             var newlocation = movementController.Move(Core.Enum.MovementDirection.Left, location);
 
             Assert.IsTrue(newlocation.Equals(location));
+        }
+
+        [Test]
+        public void Parse_Success()
+        {
+            MovementController movementController = new MovementController();
+
+            var movement = movementController.ParseDirection("up");
+
+            Assert.IsNotNull(movement);
+            Assert.IsTrue((MovementDirection)movement == MovementDirection.Up);
+        }
+
+        [Test]
+        public void Parse_Success_Capitalised()
+        {
+            MovementController movementController = new MovementController();
+
+            var movement = movementController.ParseDirection("UP");
+
+            Assert.IsNotNull(movement);
+            Assert.IsTrue((MovementDirection)movement == MovementDirection.Up);
+        }
+
+        [Test]
+        public void Parse_Fail()
+        {
+            MovementController movementController = new MovementController();
+
+            var movement = movementController.ParseDirection("wrong");
+
+            Assert.IsNull(movement);
         }
     }
 }

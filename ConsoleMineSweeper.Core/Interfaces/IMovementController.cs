@@ -8,5 +8,6 @@ namespace ConsoleMineSweeper.Core.Interfaces
     public interface IMovementController
     {
         Coordinate Move(MovementDirection direction, Coordinate currentLocation);
+        object? ParseDirection(string move);
     }
 }

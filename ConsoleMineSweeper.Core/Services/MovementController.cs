@@ -8,8 +8,11 @@ namespace ConsoleMineSweeper.Core.Services
 {
     public class MovementController: IMovementController
     {
-        public MovementController()
+
+        public object ParseDirection(string move)
         {
+            MovementDirection.TryParse(typeof(MovementDirection), move, true, out object movement);
+            return movement;
         }
 
         public Coordinate Move(MovementDirection direction, Coordinate CurrentLocation)

@@ -63,8 +63,6 @@ namespace ConsoleMineSweeper.Test
 
             var mines = mineCreator.CreateMines(Core.Enum.GameDifficulty.Impossible);
 
-
-            //Todo Check this test is accurate, seems unlikely at this momemnt
             Assert.IsTrue(mines.Distinct().Count() == mines.Count());
 
             
